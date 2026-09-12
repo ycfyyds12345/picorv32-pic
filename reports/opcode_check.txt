@@ -1,0 +1,2 @@
+OPCODE_CHECK_PASS opcode=0x2b funct7=0 funct3_counts={0: 2, 1: 2, 2: 1, 3: 1, 4: 1}
+Packed RV32I LW count=12; no custom opcodes in scalar/packed functions

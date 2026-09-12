@@ -1,0 +1,315 @@
+Reading pref.tcl
+
+# 2020.4
+
+# do sim/run_baseline.do
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap basework build/basework 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:51:01 on Sep 12,2026
+# vlog -work basework picorv32.v testbench_ez.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# 	testbench
+# End time: 13:51:01 on Sep 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -onfinish stop basework.testbench 
+# Start time: 13:51:01 on Sep 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "picorv32(fast)".
+# ** Warning: testbench_ez.v(48): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 27, found 10.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'irq'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: testbench_ez.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=18.
+# //  ModelSim SE-64 2020.4 Oct 13 2020 Linux 5.15.0-139-generic
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.testbench(fast)
+# Loading work.picorv32(fast)
+# ifetch 0x00000000: 0x3fc00093
+# ifetch 0x00000004: 0x0000a023
+# ifetch 0x00000008: 0x0000a103
+# write  0x000003fc: 0x00000000 (wstrb=1111)
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000000
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000001 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000001
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000002 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000002
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000003 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000003
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000004 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000004
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000005 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000005
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000006 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000006
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000007 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000007
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000008 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000008
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000009 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000009
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000000a (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000000a
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000000b (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000000b
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000000c (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000000c
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000000d (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000000d
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000000e (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000000e
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000000f (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000000f
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000010 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000010
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000011 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000011
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000012 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000012
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000013 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000013
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000014 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000014
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000015 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000015
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000016 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000016
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000017 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000017
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000018 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000018
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000019 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000019
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000001a (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000001a
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000001b (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000001b
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000001c (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000001c
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000001d (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000001d
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000001e (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000001e
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x0000001f (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x0000001f
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000020 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000020
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000021 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000021
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000022 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000022
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000023 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000023
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000024 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000024
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000025 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000025
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000026 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000026
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000027 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# read   0x000003fc: 0x00000027
+# ifetch 0x00000010: 0x0020a023
+# ifetch 0x00000014: 0xff5ff06f
+# write  0x000003fc: 0x00000028 (wstrb=1111)
+# ifetch 0x00000008: 0x0000a103
+# ifetch 0x0000000c: 0x00110113
+# 40
+BASELINE_PASS counter=40
+# End time: 13:51:02 on Sep 12,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 18

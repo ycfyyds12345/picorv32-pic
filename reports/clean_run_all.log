@@ -1,0 +1,29 @@
+BASELINE_PASS
+XPIX_UNIT_TEST_PASS
+SOC_TEST_PASS
+BRAM_TEST_PASS
+ILLEGAL_INSTRUCTION_PASS
+UART_BIT_LEVEL_PASS
+UART_SERVER_PASS
+HOST_IMAGES_PASS two 256x256 datasets generated
+OPCODE_CHECK_PASS opcode=0x2b funct7=0 funct3_counts={0: 2, 1: 2, 2: 1, 3: 1, 4: 1}
+Packed RV32I LW count=12; no custom opcodes in scalar/packed functions
+SOC_TEST_PASS
+motion abs: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+motion thresh: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+motion addus: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+motion max: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+motion min: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+motion motion: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+SOC_TEST_PASS
+gradient abs: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+gradient thresh: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+gradient addus: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+gradient max: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+gradient min: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+gradient motion: Python golden + scalar/packed/xpix PASS 65536 pixels mismatch=0
+Compiled 37 upstream RV32I tests
+SOC_TEST_PASS
+SOC_TEST_PASS
+REGRESSION_COMPARE_PASS cycles and instret identical
+ALL_TESTS_PASS

@@ -1,0 +1,76 @@
+
+build/minimal.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00080137          	lui	sp,0x80
+   4:	00001197          	auipc	gp,0x1
+   8:	90818193          	addi	gp,gp,-1784 # 90c <__global_pointer$>
+   c:	10c00293          	li	t0,268
+  10:	10c00313          	li	t1,268
+  14:	0062f863          	bgeu	t0,t1,24 <_start+0x24>
+  18:	0002a023          	sw	zero,0(t0)
+  1c:	00428293          	addi	t0,t0,4
+  20:	ff5ff06f          	j	14 <_start+0x14>
+  24:	014000ef          	jal	ra,38 <main>
+  28:	020002b7          	lui	t0,0x2000
+  2c:	01028293          	addi	t0,t0,16 # 2000010 <__global_pointer$+0x1fff704>
+  30:	00a2a023          	sw	a0,0(t0)
+  34:	0000006f          	j	34 <_start+0x34>
+
+00000038 <main>:
+  38:	ff0087b7          	lui	a5,0xff008
+  3c:	00ff8737          	lui	a4,0xff8
+  40:	0c878793          	addi	a5,a5,200 # ff0080c8 <__global_pointer$+0xff0077bc>
+  44:	06470713          	addi	a4,a4,100 # ff8064 <__global_pointer$+0xff7758>
+  48:	00e7862b          	0xe7862b
+  4c:	ffff06b7          	lui	a3,0xffff0
+  50:	06468693          	addi	a3,a3,100 # ffff0064 <__global_pointer$+0xfffef758>
+  54:	00200513          	li	a0,2
+  58:	08d61063          	bne	a2,a3,d8 <main+0xa0>
+  5c:	ff8186b7          	lui	a3,0xff818
+  60:	80808637          	lui	a2,0x80808
+  64:	07f68693          	addi	a3,a3,127 # ff81807f <__global_pointer$+0xff817773>
+  68:	08060613          	addi	a2,a2,128 # 80808080 <__global_pointer$+0x80807774>
+  6c:	00c696ab          	0xc696ab
+  70:	f0000613          	li	a2,-256
+  74:	06c69463          	bne	a3,a2,dc <main+0xa4>
+  78:	ff808637          	lui	a2,0xff808
+  7c:	f0060593          	addi	a1,a2,-256 # ff807f00 <__global_pointer$+0xff8075f4>
+  80:	00b6262b          	0xb6262b
+  84:	06d61463          	bne	a2,a3,ec <main+0xb4>
+  88:	00e7b62b          	0xe7b62b
+  8c:	ffff86b7          	lui	a3,0xffff8
+  90:	0c868693          	addi	a3,a3,200 # ffff80c8 <__global_pointer$+0xffff77bc>
+  94:	04d61863          	bne	a2,a3,e4 <main+0xac>
+  98:	00e7c7ab          	0xe7c7ab
+  9c:	00008737          	lui	a4,0x8
+  a0:	06470713          	addi	a4,a4,100 # 8064 <__global_pointer$+0x7758>
+  a4:	04e79863          	bne	a5,a4,f4 <main+0xbc>
+  a8:	07b00793          	li	a5,123
+  ac:	00f7802b          	0xf7802b
+  b0:	00000793          	li	a5,0
+  b4:	04079863          	bnez	a5,104 <main+0xcc>
+  b8:	00100693          	li	a3,1
+  bc:	02000613          	li	a2,32
+  c0:	0080006f          	j	c8 <main+0x90>
+  c4:	02c78c63          	beq	a5,a2,fc <main+0xc4>
+  c8:	00d7a72b          	0xd7a72b
+  cc:	00178793          	addi	a5,a5,1
+  d0:	fee78ae3          	beq	a5,a4,c4 <main+0x8c>
+  d4:	00800513          	li	a0,8
+  d8:	00008067          	ret
+  dc:	00300513          	li	a0,3
+  e0:	00008067          	ret
+  e4:	00500513          	li	a0,5
+  e8:	00008067          	ret
+  ec:	00400513          	li	a0,4
+  f0:	00008067          	ret
+  f4:	00600513          	li	a0,6
+  f8:	00008067          	ret
+  fc:	00100513          	li	a0,1
+ 100:	00008067          	ret
+ 104:	00700513          	li	a0,7
+ 108:	00008067          	ret

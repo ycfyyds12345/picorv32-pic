@@ -1,0 +1,73 @@
+Reading pref.tcl
+
+# 2020.4
+
+# do sim/run_soc.do
+# ** Warning: (vlib-34) Library already exists at "build/socwork".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap socwork build/socwork 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:51:15 on Sep 12,2026
+# vlog -sv -work socwork rtl/picorv32.v rtl/xpix_pcpi.v rtl/soc_bram.v rtl/simpleuart.v rtl/xpix_soc.v sim/tb_soc.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# -- Compiling module xpix_pcpi
+# -- Compiling module soc_bram
+# -- Compiling module simpleuart
+# -- Compiling module xpix_soc
+# -- Compiling module tb_soc
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# 	tb_soc
+# End time: 13:51:15 on Sep 12,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 1
+# +firmware=build/image_bench.hex
+# +firmware=build/image_bench.hex +images=build/images/motion.hex
+# vsim -voptargs="+acc" -onfinish stop socwork.tb_soc "+firmware=build/image_bench.hex" "+images=build/images/motion.hex" -gXPIX=1 
+# Start time: 13:51:15 on Sep 12,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  ModelSim SE-64 2020.4 Oct 13 2020 Linux 5.15.0-139-generic
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_soc(fast)
+# Loading work.xpix_soc(fast)
+# Loading work.xpix_pcpi(fast)
+# Loading work.picorv32(fast)
+# Loading work.soc_bram(fast)
+# Loading work.simpleuart(fast)
+# workload,scalar_cycles,packed_cycles,xpix_cycles,scalar_instret,packed_instret,xpix_instret,mismatch_packed,mismatch_xpix
+# abs,3670052,2409128,753700,720903,541320,131079,0,0
+# thresh,3145760,2029744,753700,589830,456842,131079,0,0
+# addus,3343908,2557480,753700,591367,542216,131079,0,0
+# max,3082784,2296356,753700,526854,477703,131079,0,0
+# min,3082784,2296356,753700,526854,477703,131079,0,0
+# motion,3869216,2709812,852019,723462,547083,147466,0,0
+# SOC_TEST_PASS cycles=64503494 custom_count=114688
+# ** Note: $finish    : sim/tb_soc.v(28)
+#    Time: 516028036 ns  Iteration: 1  Instance: /tb_soc
+# Break in Module tb_soc at sim/tb_soc.v line 28
+# End time: 13:53:01 on Sep 12,2026, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 0

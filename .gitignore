@@ -35,3 +35,14 @@
 /synth.log
 /synth.v
 .*.swp
+
+# XPix generated build and simulator caches
+/build/
+/.Xil/
+/modelsim.ini
+/transcript
+/vivado*.log
+/vivado*.jou
+*.backup.*
+__pycache__/
+*.pyc
